@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e3f2fd, #fce4ec);
+  color: #333;
+  transition: background 0.4s, color 0.4s;
+  scroll-behavior: smooth;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 999;
+}
+.theme-toggle button {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hero {
+  background: linear-gradient(120deg, #2196f3, #00bcd4);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+.hero .profile-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+#animated-role {
+  font-size: 18px;
+  height: 24px;
+  margin-bottom: 20px;
+}
+.buttons button {
+  background: white;
+  border: none;
+  color: #007bff;
+  padding: 10px 16px;
+  margin: 5px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.buttons button:hover {
+  background: #f0f0f0;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #0077cc;
+}
+.tags {
+  text-align: center;
+}
+.tags span {
+  display: inline-block;
+  margin: 6px;
+  padding: 10px 14px;
+  background: #007bff;
+  color: white;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+.tags span:hover {
+  background: #0056b3;
+}
+.project-card {
+  background: white;
+  padding: 20px;
+  margin-top: 15px;
+  border-left: 5px solid #007bff;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #007bff;
+  color: white;
+  margin-top: 40px;
+  border-radius: 10px 10px 0 0;
+}
+
+body.dark {
+  background: linear-gradient(to right, #1a1a1a, #111);
+  color: #f0f0f0;
+}
+body.dark .hero {
+  background: linear-gradient(120deg, #333, #111);
+}
+body.dark .project-card {
+  background: #1f1f1f;
+}
+body.dark .tags span {
+  background: #333;
+}
+body.dark footer {
+  background: #1a1a1a;
+}
+body.dark .section h2 {
+  color: #66b2ff;
+}
+
+/* === Projects Section Styling === */
+.projects {
+  padding: 60px 20px;
+  background: #fefefe;
+}
+
+body.dark .projects {
+  background: #181818;
+}
+
+.project-card {
+  background: #ffffff;
+  border-left: 6px solid #007bff;
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark .project-card {
+  background: #1f1f1f;
+  border-left-color: #66b2ff;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.1);
+}
+
+.project-card h3 {
+  font-size: 22px;
+  color: #007bff;
+  margin-bottom: 8px;
+}
+
+body.dark .project-card h3 {
+  color: #66b2ff;
+}
+
+.project-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+}
+
+body.dark .project-card p {
+  color: #ccc;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 12px;
+  color: #007bff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.project-card a:hover {
+  color: #0056b3;
+}

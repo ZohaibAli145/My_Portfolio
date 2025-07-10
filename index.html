@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="theme-toggle">
+    <button onclick="toggleTheme()">🌓</button>
+  </div>
+
+  <header class="hero">
+    <div class="content">
+      <img src="./picc cv" alt="Zohaib" class="profile-img" />
+      <h1>Zohaib Ali</h1>
+      <p id="animated-role"></p>
+      <div class="buttons">
+        <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"> Contact</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section about">
+    <h2>About Me</h2>
+    <p>I'm a passionate front-end developer with a focus on creating sleek and responsive UI experiences. Currently completing my BSCS and building cool web apps using HTML, CSS, JS, and React.</p>
+  </section>
+
+  <section class="section skills">
+    <h2>Skills</h2>
+    <div class="tags">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Bootstrap</span>
+    </div>
+  </section>
+
+  <section class="section projects">
+  <h2>Projects</h2>
+
+  <div class="project-card">
+    <h3> Weather App</h3>
+    <p>Displays real-time weather using OpenWeatherMap API with dynamic UI.</p>
+    <a href="https://zohaibali145.github.io/Weather_App/" target="_blank">🔗 Live Demo</a>
+  </div>
+
+  <div class="project-card">
+    <h3> E-commerce Store</h3>
+    <p>Product listing, cart system with FakeStore API and local storage.</p>
+    <a href="https://zohaibali145.github.io/API_STORE/" target="_blank">🔗 Live Demo</a>
+  </div>
+
+  <div class="project-card">
+    <h3> News App</h3>
+    <p>Shows trending news using News API. Includes search and category filter.</p>
+    <a href="https://zohaibali145.github.io/News_API/" target="_blank">🔗 Live Demo</a>
+  </div>
+
+  <div class="project-card">
+    <h3> Schools Info</h3>
+    <p>Helps manage student records, classes, and attendance — built for coaching centers.</p>
+    <a href="https://zohaibali145.github.io/Schools_Info_Website/" target="_blank">🔗 Live Demo</a>
+  </div>
+</section>
+
+  <section class="section contact" id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mujidafridi@gmail.com">mujidafridi@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/ZohaibAli145" target="_blank">github.com/ZohaibAli145</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Zohaib Ali. </p>
+  </footer>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
